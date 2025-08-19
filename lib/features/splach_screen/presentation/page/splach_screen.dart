@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_final_project/core/utils/app_assets.dart';
 import 'package:flutter_final_project/core/utils/app_colors.dart';
-import 'package:flutter_final_project/features/onboardind/page/onboarding.dart';
-// غيرها حسب اسم شاشة البداية بتاعتك
+import 'package:flutter_final_project/features/onboardind/presentation/page/onboarding.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -31,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: AppColors.YellowBase,
       body: Center(
         child: Image.asset(
-          "assets/images/logo2.png",
+          AppAssets.logo2,
           width: screenWidth * 0.5,
           height: screenHeight * 0.3,
         ),
