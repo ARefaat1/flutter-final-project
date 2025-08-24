@@ -17,19 +17,19 @@ class OnboardingModel {
   static final List<OnboardingModel> onboardingData = [
     OnboardingModel(
       icon: AppAssets.carticon,
-      title: AppStrings.OrderforFood,
+      title: AppStrings.orderForFood,
       subtitle: AppStrings.suptitle1,
       image: AppAssets.onboarding1,
     ),
     OnboardingModel(
       icon: AppAssets.casheicon,
-      title: AppStrings.EasyPayment,
+      title: AppStrings.easyPayment,
       subtitle: AppStrings.suptitle1,
       image: AppAssets.onboarding2,
     ),
     OnboardingModel(
       icon: AppAssets.deliveryicon,
-      title: AppStrings.FastDelivery,
+      title: AppStrings.fastDelivery,
       subtitle: AppStrings.suptitle1,
       image: AppAssets.onboarding3,
     ),
