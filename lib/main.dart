@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_final_project/features/Home/presentation/page/home_screen.dart';
 import 'package:flutter_final_project/features/splach_screen/presentation/page/splach_screen.dart';
 
 void main() {

@@ -4,18 +4,18 @@ import 'package:flutter_final_project/core/utils/app_textstyles.dart';
 class CustomElevatedButton extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
-  final double width;
-  final double height;
-  final Color backgroundColor;
+  final double? width;
+  final double? height;
+  final Color? backgroundColor;
   final TextStyle? textStyle;
 
   const CustomElevatedButton({
     super.key,
     required this.text,
     required this.onPressed,
-    this.width = 150,
-    this.height = 45,
-    this.backgroundColor = Colors.orange, // default color
+    this.width,
+    this.height,
+    this.backgroundColor, // default color
     this.textStyle,
   });
 
@@ -28,7 +28,7 @@ class CustomElevatedButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           backgroundColor: backgroundColor,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(30),
           ),
         ),
         onPressed: onPressed,

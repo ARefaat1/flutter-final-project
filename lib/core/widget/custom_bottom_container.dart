@@ -4,13 +4,13 @@ import 'package:flutter_final_project/core/utils/app_colors.dart';
 class CustomBottomContainer extends StatelessWidget {
   final double? height;
   final double? width;
-  final Widget child;
+  final Widget? child;
   final EdgeInsetsGeometry? padding;
 
   const CustomBottomContainer({
     super.key,
     this.height,
-    required this.child,
+    this.child,
     this.padding,
     this.width,
   });
