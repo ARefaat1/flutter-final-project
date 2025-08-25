@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_final_project/core/utils/app_colors.dart';
 import 'package:flutter_final_project/core/widget/custom_textformfiled.dart';
-import 'package:flutter_final_project/features/Home/presentation/widget/BottomNav.dart';
+import 'package:flutter_final_project/core/widget/BottomNav.dart';
 import 'package:flutter_final_project/features/Home/presentation/widget/categorycard.dart';
 import 'package:flutter_final_project/features/Home/presentation/widget/text_column.dart';
 import 'package:flutter_svg/flutter_svg.dart';

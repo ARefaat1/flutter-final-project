@@ -11,7 +11,7 @@ class MenusFoodGridView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(left: 35.0, top: 20.0, right: 5.0, bottom: 5.0),
+      padding: const EdgeInsets.all(10.0),
       child: GridView.builder(
         itemCount: items.length, // ✅ show dynamic length
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -47,9 +47,9 @@ class MenusFoodGridView extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(meal.title!, style: AppTextstyles.style24orgI),
+                      Text(meal.title!, style: AppTextstyles.style16OrangeW500),
                       const SizedBox(height: 4.0),
-                      Text(meal.description!, style: AppTextstyles.style14blackfont),
+                      Text(meal.description!, style: AppTextstyles.style12BlackW300),
                     ],
                   ),
                 ),
@@ -58,6 +58,7 @@ class MenusFoodGridView extends StatelessWidget {
           );
         },
       ),
+      
     );
   }
 }

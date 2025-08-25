@@ -6,6 +6,7 @@ class CustomBottomContainer extends StatelessWidget {
   final double? width;
   final Widget? child;
   final EdgeInsetsGeometry? padding;
+  final Widget? bottomNavigationBar;
 
   const CustomBottomContainer({
     super.key,
@@ -13,6 +14,7 @@ class CustomBottomContainer extends StatelessWidget {
     this.child,
     this.padding,
     this.width,
+    this.bottomNavigationBar,
   });
 
   @override

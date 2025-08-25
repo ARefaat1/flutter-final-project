@@ -15,22 +15,14 @@ class MenuAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: AppColors.YellowBase,
-      automaticallyImplyLeading: false, // disables default back button
-      title: Row(
-        children: [
-          IconButton(
-            onPressed: () => Navigator.of(context).pop(),
-            icon: SvgPicture.asset('assets/icons/back.svg'),
-          ),
-          const SizedBox(width: 8),
-          Expanded(
-            child: Center(
-              child: Text(title, style: AppTextstyles.style17weightcolor),
-            ),
-          ),
-        ],
+      automaticallyImplyLeading: false,
+      centerTitle: true, 
+      leading: IconButton(
+        onPressed: () => Navigator.of(context).pop(),
+        icon: SvgPicture.asset('assets/icons/back.svg'),
       ),
-      toolbarHeight: 80, // ✅ makes AppBar taller
+      title: Text(title, style: AppTextstyles.style28WhiteW700),
+      toolbarHeight: 80,
     );
   }
 
