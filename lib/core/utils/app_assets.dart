@@ -26,4 +26,13 @@ class AppAssets {
   static const String Drinks = "assets/images/Drinks.png";
   static const String vegan = "assets/images/Vegan.png";
   static const String Desserts = "assets/images/Desserts.png";
+
+  static const String back_arrow = "assets/icons/BackiconArrow.svg";
+  static const String showoff = "assets/icons/ShowOff.svg";
+
+  // conect with
+
+  static const String google = "assets/icons/GoogleIcon.svg";
+  static const String facebook = "assets/icons/FacebookIcon.svg";
+  static const String fingerprint = "assets/icons/FingerprintIcon.svg";
 }
