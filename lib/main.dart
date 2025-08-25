@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_final_project/features/Home/presentation/page/home_screen.dart';
-import 'package:flutter_final_project/features/splach_screen/presentation/page/splach_screen.dart';
+import 'package:flutter_final_project/core/router/routers.dart';
+import 'package:flutter_final_project/core/utils/app_colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: router,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(),
-      home: const SplashScreen(),
+      theme: ThemeData(scaffoldBackgroundColor: AppColors.YellowBase),
     );
   }
 }

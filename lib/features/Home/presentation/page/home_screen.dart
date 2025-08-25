@@ -27,28 +27,28 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CustomTextFormField(
-                  controller: TextEditingController(),
-                  hintText: "Search",
-                  hintstyle: const TextStyle(
-                    color: Color(0xff676767),
-                    fontSize: 12,
-                    fontWeight: FontWeight.w300,
-                  ),
-                  width: 200,
-                  height: 26,
-                  fillColor: Colors.white,
-                  suffixicon: Directionality(
-                    textDirection: TextDirection.ltr,
-                    child: SizedBox(
-                      width: 10,
-                      height: 3,
-                      child: SvgPicture.asset(
-                        "assets/icons/Group 109.svg",
-                      ),
-                    ),
-                  ),
-                ),
+                // CustomTextFormField(
+                //   controller: TextEditingController(),
+                //   hintText: "Search",
+                //   hintstyle: const TextStyle(
+                //     color: Color(0xff676767),
+                //     fontSize: 12,
+                //     fontWeight: FontWeight.w300,
+                //   ),
+                //   width: 200,
+                //   height: 26,
+                //   fillColor: Colors.white,
+                //   suffixicon: Directionality(
+                //     textDirection: TextDirection.ltr,
+                //     child: SizedBox(
+                //       width: 10,
+                //       height: 3,
+                //       child: SvgPicture.asset(
+                //         "assets/icons/Group 109.svg",
+                //       ),
+                //     ),
+                //   ),
+                // ),
                 const SizedBox(height: 10),
                 const TextColumn(),
               ],

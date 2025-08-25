@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_final_project/core/router/app_routes.dart';
 import 'package:flutter_final_project/core/utils/app_assets.dart';
 import 'package:flutter_final_project/core/utils/app_colors.dart';
 import 'package:flutter_final_project/core/widget/custom_elevated_button.dart';
 import 'package:flutter_final_project/features/auth/presentation/page/login_screen.dart';
+import 'package:go_router/go_router.dart';
 
 class Authenticationchoice extends StatelessWidget {
   const Authenticationchoice({super.key});
@@ -44,10 +46,7 @@ class Authenticationchoice extends StatelessWidget {
                   fontSize: 24,
                   fontWeight: FontWeight.w500),
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const LoginScreen()),
-                );
+                context.go(AppRoutes.login);
               },
               backgroundColor: AppColors.YellowBase,
             ),
@@ -62,7 +61,9 @@ class Authenticationchoice extends StatelessWidget {
                     color: AppColors.orangecolor,
                     fontSize: 24,
                     fontWeight: FontWeight.w500),
-                onPressed: () {},
+                onPressed: () {
+                  context.push(AppRoutes.signup);
+                },
                 backgroundColor: AppColors.yellow2),
           ],
         ),

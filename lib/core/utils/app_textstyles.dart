@@ -14,4 +14,12 @@ abstract class AppTextstyles {
       fontSize: 14, fontWeight: FontWeight.w500, color: AppColors.blackfont);
   static final TextStyle style17weightcolor = GoogleFonts.poppins(
       fontSize: 17, fontWeight: FontWeight.w500, color: AppColors.whitefont);
+  static final TextStyle styleauth = GoogleFonts.poppins(
+      fontSize: 28, fontWeight: FontWeight.w700, color: AppColors.whitefont);
+  static final TextStyle style24blackfont = GoogleFonts.poppins(
+      fontSize: 24, fontWeight: FontWeight.w600, color: AppColors.blackfont);
+  static final TextStyle stylesuptitle = GoogleFonts.poppins(
+      fontSize: 14, fontWeight: FontWeight.w300, color: AppColors.blackfont);
+  static final TextStyle style20w500 = GoogleFonts.poppins(
+      fontSize: 20, fontWeight: FontWeight.w500, color: AppColors.blackfont);
 }
