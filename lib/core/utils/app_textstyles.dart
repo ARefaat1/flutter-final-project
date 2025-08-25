@@ -14,4 +14,8 @@ abstract class AppTextstyles {
       fontSize: 14, fontWeight: FontWeight.w500, color: AppColors.blackfont);
   static final TextStyle style17weightcolor = GoogleFonts.poppins(
       fontSize: 17, fontWeight: FontWeight.w500, color: AppColors.whitefont);
+
+
+  static final TextStyle style20OrangeW500 = GoogleFonts.poppins(
+      fontSize: 20, fontWeight: FontWeight.w500, color: AppColors.orangecolor);
 }

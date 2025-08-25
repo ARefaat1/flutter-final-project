@@ -36,6 +36,8 @@ class _SplashScreenState extends State<SplashScreen> {
           height: screenHeight * 0.3,
         ),
       ),
+      
+
     );
   }
 }
