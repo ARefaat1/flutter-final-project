@@ -24,7 +24,7 @@ class CustomBottomContainer extends StatelessWidget {
       left: 0,
       right: 0,
       child: Container(
-        padding: padding ?? const EdgeInsets.all(20),
+        padding: padding,
         height: height,
         width: width,
         decoration: const BoxDecoration(

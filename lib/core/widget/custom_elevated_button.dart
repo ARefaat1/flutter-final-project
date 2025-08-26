@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_final_project/core/utils/app_colors.dart';
 import 'package:flutter_final_project/core/utils/app_textstyles.dart';
 
 class CustomElevatedButton extends StatelessWidget {
@@ -15,7 +16,7 @@ class CustomElevatedButton extends StatelessWidget {
     required this.onPressed,
     this.width,
     this.height,
-    this.backgroundColor, // default color
+    this.backgroundColor = AppColors.orangecolor, // default color
     this.textStyle,
   });
 

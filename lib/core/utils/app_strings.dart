@@ -1,4 +1,5 @@
 class AppStrings {
+  // Onboarding Screen
   static const String orderForFood = "Order for Food";
   static const String suptitle1 =
       "Lorem ipsum dolor sit amet, conse ctetur\n  adipiscing elit, sed do eiusmod tempor\n incididunt ut labore et dolore magna.";
@@ -7,6 +8,31 @@ class AppStrings {
   static const String next = "Next";
   static const String getstart = "Get Start";
   static const String skip = "Skip";
+
+  // auth
+
+  static const String login = " Log In";
+  static const String welcome = "Welcome";
+  static const subtitleLogin =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+      "sed do eiusmod tempor incididunt ut labore et dolore"
+      "magna aliqua.";
+  static const String email = "Email or Mobile Number";
+  static const String password = "Password";
+  static const String forgotpassword = "Forgot Password?";
+  static const String orsignupwith = "or sign up with";
+
+  static const String donthaveaccount = " Don’t have an account? ";
+  static const String signup = " Sign Up";
+  static const String newacount = "New Account";
+  static const String fullname = " Full Name ";
+  static const String phonenumber = " Phone Number ";
+  static const String birthdate = " Birth Date ";
+  static const String Bycontinuing = "By continuing, you agree to\n";
+  static const String and = " and ";
+  static const String PrivacyPolicy = "Privacy Policy.";
+  static const String TermsofUse = "Terms of Use";
+  static const String setpassword = "Set Password";
 
   static const String favoritesTitle = "Favorites";
   static const String favoritesSubtitle = "It's time to buy your favorite dish.";

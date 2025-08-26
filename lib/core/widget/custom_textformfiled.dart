@@ -1,51 +1,55 @@
 import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  final TextEditingController controller;
+  final TextEditingController? controller;
   final String? hintText;
   final bool obscureText;
   final double? width;
   final double? height;
   final TextInputType? keyboardType;
-  final Widget? suffixicon;
-  final Widget? prefix;
-  final Color? fillColor;
-  final TextStyle? hintstyle;
+  final Widget? suffixIcon;
+  final Widget? prefixIcon;
+  final TextStyle? hintStyle;
+  final bool? readonly;
+  final void Function()? ontap;
 
   const CustomTextFormField({
     super.key,
-    required this.controller,
-    this.hintText = "",
+    this.controller,
+    this.hintText,
     this.obscureText = false,
     this.width,
     this.height,
     this.keyboardType,
-    this.suffixicon,
-    this.prefix,
-    this.fillColor,
-    this.hintstyle,
+    this.suffixIcon,
+    this.prefixIcon,
+    this.hintStyle,
+    this.readonly,
+    this.ontap,
   });
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width,
-      height: height,
+      width: width ?? 322,
+      height: height ?? 45,
       child: TextFormField(
-        keyboardType: keyboardType ?? TextInputType.text,
+        onTap: ontap,
         controller: controller,
+        keyboardType: keyboardType ?? TextInputType.text,
         obscureText: obscureText,
+        readOnly: readonly ?? false,
         decoration: InputDecoration(
-          prefixIcon: prefix,
-          suffixIcon: suffixicon,
+          prefixIcon: prefixIcon,
+          suffixIcon: suffixIcon,
           hintText: hintText,
-          hintStyle: hintstyle,
+          hintStyle: hintStyle,
           filled: true,
-          fillColor: fillColor ?? Colors.grey[200],
+          fillColor: const Color(0xFFF3E9B5),
           contentPadding:
               const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(30),
+            borderRadius: BorderRadius.circular(13),
             borderSide: BorderSide.none,
           ),
         ),
