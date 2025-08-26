@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_final_project/core/router/app_routes.dart';
 import 'package:flutter_final_project/features/Home/presentation/page/home_screen.dart';
 import 'package:flutter_final_project/features/auth/presentation/page/Authentication%20Choice.dart';
+import 'package:flutter_final_project/features/auth/presentation/page/Fingerprint_screen.dart';
 import 'package:flutter_final_project/features/auth/presentation/page/forget_Password.dart';
 import 'package:flutter_final_project/features/auth/presentation/page/login_screen.dart';
 import 'package:flutter_final_project/features/auth/presentation/page/signup_screen.dart';
@@ -39,6 +40,10 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: AppRoutes.home,
       builder: (context, state) => HomeScreen(),
+    ),
+    GoRoute(
+      path: AppRoutes.fingerprint,
+      builder: (context, state) => FingerprintScreen(),
     ),
   ],
   errorBuilder: (context, state) {

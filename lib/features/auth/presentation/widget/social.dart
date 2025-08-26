@@ -28,11 +28,15 @@ class SignupSocial extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SvgPicture.asset(AppAssets.google),
+            InkWell(onTap: () {}, child: SvgPicture.asset(AppAssets.google)),
             const SizedBox(width: 5),
-            SvgPicture.asset(AppAssets.facebook),
+            InkWell(onTap: () {}, child: SvgPicture.asset(AppAssets.facebook)),
             const SizedBox(width: 5),
-            SvgPicture.asset(AppAssets.fingerprint),
+            InkWell(
+                onTap: () {
+                  context.push(AppRoutes.fingerprint);
+                },
+                child: SvgPicture.asset(AppAssets.fingerprint)),
           ],
         ),
       ],
