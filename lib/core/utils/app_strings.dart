@@ -9,6 +9,10 @@ class AppStrings {
   static const String getstart = "Get Start";
   static const String skip = "Skip";
 
+  static const String favoritesTitle = "Favorites";
+
+  static const String Skip = "Skip";
+
   // auth
 
   static const String login = " Log In";
@@ -35,4 +39,7 @@ class AppStrings {
   static const String setpassword = "Set Password";
 
   static const String favoritesTitle = "Favorites";
+  static const String confirmpassword = "Confirm Password";
+  static const String createnewpasssword = "Create New Password";
+  static const String SetYourFingerprint = "Set Your Fingerprint";
 }

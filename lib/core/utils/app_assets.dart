@@ -35,4 +35,5 @@ class AppAssets {
   static const String google = "assets/icons/GoogleIcon.svg";
   static const String facebook = "assets/icons/FacebookIcon.svg";
   static const String fingerprint = "assets/icons/FingerprintIcon.svg";
+  static const String finger = "assets/images/Mark.png";
 }
