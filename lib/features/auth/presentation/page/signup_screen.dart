@@ -33,7 +33,7 @@ class SignupScreen extends StatelessWidget {
                     SizedBox(height: 10),
                     SignupTerms(),
                     SizedBox(height: 10),
-                    SignupSocial(),
+                    Social(),
                     SizedBox(height: 10),
                     SignupFooter(),
                   ],
