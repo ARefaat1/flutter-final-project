@@ -9,6 +9,7 @@ class AppStrings {
   static const String getstart = "Get Start";
   static const String skip = "Skip";
 
+
   // auth
 
   static const String login = " Log In";
@@ -33,6 +34,10 @@ class AppStrings {
   static const String PrivacyPolicy = "Privacy Policy.";
   static const String TermsofUse = "Terms of Use";
   static const String setpassword = "Set Password";
+
+  static const String confirmpassword = "Confirm Password";
+  static const String createnewpasssword = "Create New Password";
+  static const String SetYourFingerprint = "Set Your Fingerprint";
 
   static const String favoritesTitle = "Favorites";
   static const String favoritesSubtitle = "It's time to buy your favorite dish.";

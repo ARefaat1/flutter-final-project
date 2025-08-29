@@ -5,7 +5,7 @@ import 'package:flutter_final_project/core/widget/custom_bottom_container.dart';
 import 'package:flutter_final_project/core/widget/custum_appbar.dart';
 import 'package:flutter_final_project/features/auth/presentation/widget/signup_footer.dart';
 import 'package:flutter_final_project/features/auth/presentation/widget/signup_form.dart';
-import 'package:flutter_final_project/features/auth/presentation/widget/signup_social.dart';
+import 'package:flutter_final_project/features/auth/presentation/widget/social.dart';
 import 'package:flutter_final_project/features/auth/presentation/widget/signup_terms.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -26,6 +26,7 @@ class SignupScreen extends StatelessWidget {
             child: const Padding(
               padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
               child: SingleChildScrollView(
+                physics: BouncingScrollPhysics(),
                 child: Column(
                   children: [
                     SignupForm(),
