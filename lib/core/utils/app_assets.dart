@@ -22,7 +22,7 @@ class AppAssets {
   // images categorirs
 
   static const String Meals = "assets/images/Meals.png";
-  static const String Snacks = "assets/images/snacks.png";
+  static const String Snacks = "assets/images/Snacks.png";
   static const String Drinks = "assets/images/Drinks.png";
   static const String vegan = "assets/images/Vegan.png";
   static const String Desserts = "assets/images/Dessert.png";
