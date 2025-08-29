@@ -47,4 +47,6 @@ class AppStrings {
 
   static const String bestSellerTitle = "Best Seller";
   static const String bestSellerSubtitle = "Discover the dishes recommended by the chef.";
+
+  static const String addToCart = "Add to Cart";
 }
