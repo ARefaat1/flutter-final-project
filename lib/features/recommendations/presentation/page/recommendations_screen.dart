@@ -38,7 +38,7 @@ class _RecommendationsScreenState extends State<RecommendationsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.YellowBase,
-      // appBar: MenuAppBar(title: AppStrings.recommendationsTitle), // ✅ put AppBar here
+      appBar: MenuAppBar(title: AppStrings.recommendationsTitle), // ✅ put AppBar here
       body: CustomBottomContainer(
         bottomNavigationBar: CustomBottomNavBar(
         currentIndex: 0,
@@ -51,7 +51,7 @@ class _RecommendationsScreenState extends State<RecommendationsScreen> {
           children: [
             Center(
               child: Text(
-                AppStrings.favoritesSubtitle,
+                AppStrings.recommendationsSubtitle,
                 style: AppTextstyles.style20OrangeW500,
               ),
             ), // ✅ replaced Title with Text

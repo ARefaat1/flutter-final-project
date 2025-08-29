@@ -5,7 +5,7 @@ import 'package:flutter_final_project/core/utils/app_textstyles.dart';
 import 'package:flutter_final_project/core/widget/custom_bottom_container.dart';
 import 'package:flutter_final_project/core/widget/custom_label.dart';
 import 'package:flutter_final_project/core/widget/custom_textformfiled.dart';
-import 'package:flutter_final_project/features/auth/presentation/widget/custum_appbar.dart';
+import 'package:flutter_final_project/core/widget/custum_appbar.dart';
 
 import 'package:flutter_svg/svg.dart';
 

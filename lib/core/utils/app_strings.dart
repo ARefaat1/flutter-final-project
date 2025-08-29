@@ -36,4 +36,10 @@ class AppStrings {
 
   static const String favoritesTitle = "Favorites";
   static const String favoritesSubtitle = "It's time to buy your favorite dish.";
+
+  static const String recommendationsTitle = "Recommendations";
+  static const String recommendationsSubtitle = "Explore our top recommendations for you.";
+
+  static const String bestSellerTitle = "Best Seller";
+  static const String bestSellerSubtitle = "Discover the dishes recommended by the chef.";
 }
