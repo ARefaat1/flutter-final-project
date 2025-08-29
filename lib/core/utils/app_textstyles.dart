@@ -14,6 +14,15 @@ abstract class AppTextstyles {
       fontSize: 14, fontWeight: FontWeight.w500, color: AppColors.blackfont);
   static final TextStyle style17weightcolor = GoogleFonts.poppins(
       fontSize: 17, fontWeight: FontWeight.w500, color: AppColors.whitefont);
+  static final TextStyle styleauth = GoogleFonts.poppins(
+      fontSize: 28, fontWeight: FontWeight.w700, color: AppColors.whitefont);
+  static final TextStyle style24blackfont = GoogleFonts.poppins(
+      fontSize: 24, fontWeight: FontWeight.w600, color: AppColors.blackfont);
+  static final TextStyle stylesuptitle = GoogleFonts.poppins(
+      fontSize: 14, fontWeight: FontWeight.w300, color: AppColors.blackfont);
+  static final TextStyle style20w500 = GoogleFonts.poppins(
+      fontSize: 20, fontWeight: FontWeight.w500, color: AppColors.blackfont);
+
 
   static final TextStyle style20OrangeW500 = GoogleFonts.poppins(
       fontSize: 20, fontWeight: FontWeight.w500, color: AppColors.orangecolor);
@@ -26,14 +35,13 @@ abstract class AppTextstyles {
 
   static final TextStyle style28WhiteW700 = GoogleFonts.poppins(
       fontSize: 28, fontWeight: FontWeight.w700, color: AppColors.whitefont);
-  static final TextStyle styleauth = GoogleFonts.poppins(
-      fontSize: 28, fontWeight: FontWeight.w700, color: AppColors.whitefont);
-  static final TextStyle style24blackfont = GoogleFonts.poppins(
-      fontSize: 24, fontWeight: FontWeight.w600, color: AppColors.blackfont);
-  static final TextStyle stylesuptitle = GoogleFonts.poppins(
-      fontSize: 14, fontWeight: FontWeight.w300, color: AppColors.blackfont);
-  static final TextStyle style20w500 = GoogleFonts.poppins(
-      fontSize: 20, fontWeight: FontWeight.w500, color: AppColors.blackfont);
+
+  static final TextStyle style20w700white = GoogleFonts.poppins(
+      fontSize: 20, fontWeight: FontWeight.w700, color: AppColors.whitefont);
+
+   static final TextStyle style20w500white = GoogleFonts.poppins(
+      fontSize: 20, fontWeight: FontWeight.w500, color: AppColors.whitefont);
+
   static final TextStyle style12w300grey = GoogleFonts.poppins(
       fontSize: 12, fontWeight: FontWeight.w300, color: AppColors.grey);
   static final TextStyle style12w400black = GoogleFonts.poppins(
