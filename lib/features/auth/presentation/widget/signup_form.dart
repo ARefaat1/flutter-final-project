@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_final_project/core/Validators/app_validator/BirthdateAppValidator.dart';
+import 'package:flutter_final_project/core/Validators/app_validator/Password.dart';
+import 'package:flutter_final_project/core/Validators/app_validator/PhoneNumber.dart';
+import 'package:flutter_final_project/core/Validators/app_validator/UserName.dart';
+import 'package:flutter_final_project/core/helpers/validator_helper.dart';
 import 'package:flutter_final_project/core/utils/app_assets.dart';
 import 'package:flutter_final_project/core/utils/app_strings.dart';
 import 'package:flutter_final_project/core/widget/custom_textformfiled.dart';
@@ -20,17 +25,22 @@ class SignupForm extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CustomLabel(text: AppStrings.fullname),
-        CustomTextFormField(controller: username),
+        CustomTextFormField(
+          controller: username,
+          validator: useValidator(UsernameAppValidator()),
+        ),
         const SizedBox(height: 5),
         CustomLabel(text: AppStrings.phonenumber),
         CustomTextFormField(
           controller: phoneNumber,
+          validator: useValidator(PhoneNumberAppValidator()),
           keyboardType: TextInputType.phone,
         ),
         const SizedBox(height: 5),
         CustomLabel(text: AppStrings.birthdate),
         CustomTextFormField(
           controller: birthDate,
+          validator: useValidator(BirthdateAppValidator()),
           readonly: true,
           ontap: () async {
             DateTime? pickedDate = await showDatePicker(
@@ -51,6 +61,7 @@ class SignupForm extends StatelessWidget {
         const SizedBox(height: 5),
         CustomLabel(text: AppStrings.password),
         CustomTextFormField(
+          validator: useValidator(PasswordAppValidator()),
           controller: password,
           obscureText: true,
           suffixIcon: IconButton(

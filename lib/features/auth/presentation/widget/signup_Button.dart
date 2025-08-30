@@ -4,10 +4,10 @@ import 'package:flutter_final_project/core/utils/app_strings.dart';
 import 'package:flutter_final_project/core/utils/app_textstyles.dart';
 import 'package:flutter_final_project/core/widget/custom_elevated_button.dart';
 
-class LoginButton extends StatelessWidget {
+class SignupButton extends StatelessWidget {
   final GlobalKey<FormState> formKey;
 
-  const LoginButton({super.key, required this.formKey});
+  const SignupButton({super.key, required this.formKey});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class LoginButton extends StatelessWidget {
             print(" Validation Failed");
           }
         },
-        text: AppStrings.login,
+        text: AppStrings.signup,
         textStyle: AppTextstyles.style17weightcolor,
         backgroundColor: AppColors.orangecolor,
       ),

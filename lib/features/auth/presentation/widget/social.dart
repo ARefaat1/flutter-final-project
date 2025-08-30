@@ -14,14 +14,6 @@ class Social extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CustomElevatedButton(
-          width: 207,
-          height: 45,
-          text: AppStrings.signup,
-          onPressed: () {
-            context.push(AppRoutes.home);
-          },
-        ),
         const SizedBox(height: 8),
         Text(AppStrings.orsignupwith, style: AppTextstyles.style14blackfont),
         const SizedBox(height: 10),

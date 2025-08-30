@@ -12,6 +12,9 @@ class CustomTextFormField extends StatelessWidget {
   final TextStyle? hintStyle;
   final bool? readonly;
   final void Function()? ontap;
+  final Color? fillColor;
+
+  final String? Function(String?)? validator;
 
   const CustomTextFormField({
     super.key,
@@ -26,16 +29,20 @@ class CustomTextFormField extends StatelessWidget {
     this.hintStyle,
     this.readonly,
     this.ontap,
+    this.fillColor,
+    this.validator,
   });
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: width ?? 322,
-      height: height ?? 45,
+      height: height ?? 60,
       child: TextFormField(
         onTap: ontap,
         controller: controller,
+        validator: validator,
+        autovalidateMode: AutovalidateMode.onUserInteraction,
         keyboardType: keyboardType ?? TextInputType.text,
         obscureText: obscureText,
         readOnly: readonly ?? false,
@@ -45,13 +52,15 @@ class CustomTextFormField extends StatelessWidget {
           hintText: hintText,
           hintStyle: hintStyle,
           filled: true,
-          fillColor: const Color(0xFFF3E9B5),
+          fillColor: fillColor ?? const Color(0xFFF3E9B5),
           contentPadding:
-              const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
+              const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(13),
             borderSide: BorderSide.none,
           ),
+          errorStyle: const TextStyle(height: 1),
+          helperText: ' ',
         ),
       ),
     );

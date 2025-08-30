@@ -7,8 +7,7 @@ class TextColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment:
-          CrossAxisAlignment.start, // 👈 خليهم على الشمال لو حابب
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           "Good Morning",
@@ -16,15 +15,16 @@ class TextColumn extends StatelessWidget {
             fontSize: 30,
             fontWeight: FontWeight.bold,
             color: AppColors.whitefont,
+            height: 1.0,
           ),
         ),
-        // 👈 مسافة رأسية صغيرة بين النصين
         Text(
           "Rise and shine! It's breakfast time",
           style: const TextStyle(
             fontSize: 13,
             fontWeight: FontWeight.w500,
             color: Colors.orange,
+            height: 1.5,
           ),
         ),
       ],

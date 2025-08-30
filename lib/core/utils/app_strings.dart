@@ -10,6 +10,10 @@ class AppStrings {
   static const String skip = "Skip";
 
   static const String favoritesTitle = "Favorites";
+  static const String favoritesSubtitle =
+      "It's time to buy your favorite dish.";
+
+  static const String Skip = "Skip";
 
   // auth
 
@@ -35,7 +39,33 @@ class AppStrings {
   static const String PrivacyPolicy = "Privacy Policy.";
   static const String TermsofUse = "Terms of Use";
   static const String setpassword = "Set Password";
+
   static const String confirmpassword = "Confirm Password";
   static const String createnewpasssword = "Create New Password";
   static const String SetYourFingerprint = "Set Your Fingerprint";
+
+  // Email
+  static const String emailIsRequired = "Email is required";
+  static const String emailNotValid = "Enter a valid email";
+
+  // Password
+  static const String passwordIsRequired = "Password is required";
+  static const String passwordNotValid =
+      "Password must be at least 6 characters, include 1 uppercase letter and 1 number";
+
+  // Username
+  static const String usernameIsRequired = "Username is required";
+  static const String usernameNotValid =
+      "Username must be at least 3 characters, no spaces, only letters/numbers/_";
+
+  // Phone
+  static const String phoneIsRequired = "Phone number is required";
+  static const String phoneNotValid = "Enter a valid phone number";
+  static const String emailIsValid = "Email is required";
+
+  static String Usernamemustbetleast3characters =
+      "Username must be at least 3 characters";
+
+  static const String birthdateIsRequired = "Birthdate is required";
+  static const String birthdateNotValid = "Enter a valid birthdate";
 }

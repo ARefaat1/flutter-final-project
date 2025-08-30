@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_final_project/core/Validators/app_validator/Email.dart';
+import 'package:flutter_final_project/core/Validators/app_validator/Password.dart';
+// ✅ مهم
+import 'package:flutter_final_project/core/helpers/validator_helper.dart';
 import 'package:flutter_final_project/core/utils/app_assets.dart';
 import 'package:flutter_final_project/core/utils/app_strings.dart';
 import 'package:flutter_final_project/core/utils/app_textstyles.dart';
@@ -23,12 +27,16 @@ class LoginForm extends StatelessWidget {
       children: [
         Text(AppStrings.email, style: AppTextstyles.style20w500),
         const SizedBox(height: 10),
-        CustomTextFormField(controller: emailController),
+        CustomTextFormField(
+          controller: emailController,
+          validator: useValidator(EmailAppValidator()),
+        ),
         const SizedBox(height: 20),
         Text(AppStrings.password, style: AppTextstyles.style20w500),
         const SizedBox(height: 10),
         CustomTextFormField(
           controller: passwordController,
+          validator: useValidator(PasswordAppValidator()),
           suffixIcon: IconButton(
             onPressed: () {},
             icon: SvgPicture.asset(AppAssets.showoff),
