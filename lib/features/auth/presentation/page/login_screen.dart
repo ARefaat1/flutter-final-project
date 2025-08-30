@@ -6,7 +6,7 @@ import 'package:flutter_final_project/core/utils/app_textstyles.dart';
 import 'package:flutter_final_project/core/widget/custom_elevated_button.dart';
 
 import 'package:flutter_final_project/core/widget/custom_textformfiled.dart';
-import 'package:flutter_final_project/features/auth/presentation/widget/custum_appbar.dart';
+import 'package:flutter_final_project/core/widget/custum_appbar.dart';
 import 'package:flutter_final_project/features/auth/presentation/widget/welcome_column.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';

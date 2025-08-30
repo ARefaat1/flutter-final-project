@@ -7,4 +7,9 @@ class AppRoutes {
   static const String forgotPassword = '/forgot-password';
   static const String home = '/home';
   static const String fingerprint = '/fingerprint';
+  static const String sidebar = '/sidebar';
+  static const String settings = '/settings';
+  static const String notificationSettings = '/notification-settings';
+  static const String passwordSettings = '/password-settings';
+  static const String deleteAccount = '/delete-account';
 }

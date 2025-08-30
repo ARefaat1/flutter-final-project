@@ -12,6 +12,7 @@ class CustomTextFormField extends StatelessWidget {
   final TextStyle? hintStyle;
   final bool? readonly;
   final void Function()? ontap;
+  final Color? fillColor;
 
   const CustomTextFormField({
     super.key,
@@ -26,6 +27,7 @@ class CustomTextFormField extends StatelessWidget {
     this.hintStyle,
     this.readonly,
     this.ontap,
+    this.fillColor,
   });
 
   @override
@@ -45,7 +47,7 @@ class CustomTextFormField extends StatelessWidget {
           hintText: hintText,
           hintStyle: hintStyle,
           filled: true,
-          fillColor: const Color(0xFFF3E9B5),
+          fillColor: fillColor ?? const Color(0xFFF3E9B5),
           contentPadding:
               const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
           border: OutlineInputBorder(
