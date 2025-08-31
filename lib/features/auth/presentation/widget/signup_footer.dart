@@ -11,7 +11,7 @@ class SignupFooter extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(AppStrings.donthaveaccount, style: AppTextstyles.stylesuptitle),
+          Text(AppStrings.donthaveaccount, style: AppTextstyles.style14BlackW300),
           TextButton(
             style: TextButton.styleFrom(
               padding: EdgeInsets.zero,
@@ -19,7 +19,7 @@ class SignupFooter extends StatelessWidget {
               tapTargetSize: MaterialTapTargetSize.shrinkWrap,
             ),
             onPressed: () {},
-            child: Text(AppStrings.login, style: AppTextstyles.style15orgL),
+            child: Text(AppStrings.login, style: AppTextstyles.style15OrangeW600),
           ),
         ],
       ),

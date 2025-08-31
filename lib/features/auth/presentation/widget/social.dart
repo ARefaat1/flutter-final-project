@@ -23,7 +23,7 @@ class SignupSocial extends StatelessWidget {
           },
         ),
         const SizedBox(height: 8),
-        Text(AppStrings.orsignupwith, style: AppTextstyles.style14blackfont),
+        Text(AppStrings.orsignupwith, style: AppTextstyles.style14Blackw500),
         const SizedBox(height: 10),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,

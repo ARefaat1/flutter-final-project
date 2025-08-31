@@ -23,7 +23,7 @@ class WelcomeColumn extends StatelessWidget {
         Text(
           AppStrings.subtitleLogin,
           textAlign: TextAlign.left,
-          style: AppTextstyles.stylesuptitle,
+          style: AppTextstyles.style14BlackW300,
         ),
         const SizedBox(
           height: 40,

@@ -36,7 +36,7 @@ class ForgetPassword extends StatelessWidget {
                   children: [
                     Text(
                       AppStrings.subtitleLogin,
-                      style: AppTextstyles.style14blackfont,
+                      style: AppTextstyles.style14Blackw500,
                     ),
                     const SizedBox(height: 30),
                     const CustomLabel(text: AppStrings.password),

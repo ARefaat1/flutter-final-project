@@ -43,7 +43,7 @@ class OnboardingContent extends StatelessWidget {
             /// Title
             Text(
               OnboardingModel.onboardingData[currentIndex].title,
-              style: AppTextstyles.style24orgI,
+              style: AppTextstyles.style24OrangeW900,
             ),
             const SizedBox(height: 10),
 
@@ -51,7 +51,7 @@ class OnboardingContent extends StatelessWidget {
             Text(
               OnboardingModel.onboardingData[currentIndex].subtitle,
               textAlign: TextAlign.center,
-              style: AppTextstyles.style14blackfont.copyWith(height: 1.5),
+              style: AppTextstyles.style14Blackw500.copyWith(height: 1.5),
             ),
             const SizedBox(height: 20),
 
@@ -81,7 +81,7 @@ class OnboardingContent extends StatelessWidget {
                   ? AppStrings.getstart
                   : AppStrings.next,
               backgroundColor: AppColors.orangecolor,
-              textStyle: AppTextstyles.style17weightcolor,
+              textStyle: AppTextstyles.style17whiteW500,
               onPressed: () {
                 if (currentIndex == OnboardingModel.onboardingData.length - 1) {
                   context.go(AppRoutes.authChoosing);

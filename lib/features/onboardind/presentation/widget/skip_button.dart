@@ -19,7 +19,7 @@ class SkipButton extends StatelessWidget {
         },
         child: Row(
           children: [
-            Text(AppStrings.skip, style: AppTextstyles.style15orgL),
+            Text(AppStrings.skip, style: AppTextstyles.style15OrangeW600),
             const SizedBox(width: 5),
             SvgPicture.asset(
               AppAssets.nexticon,

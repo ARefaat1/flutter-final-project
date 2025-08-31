@@ -15,11 +15,11 @@ class SignupTerms extends StatelessWidget {
           children: [
             TextSpan(text: AppStrings.Bycontinuing + "\n"),
             TextSpan(
-                text: AppStrings.TermsofUse, style: AppTextstyles.style15orgL),
+                text: AppStrings.TermsofUse, style: AppTextstyles.style15OrangeW600),
             TextSpan(text: AppStrings.and),
             TextSpan(
                 text: AppStrings.PrivacyPolicy,
-                style: AppTextstyles.style15orgL),
+                style: AppTextstyles.style15OrangeW600),
           ],
         ),
       ),

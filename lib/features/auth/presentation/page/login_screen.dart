@@ -37,7 +37,7 @@ class LoginScreen extends StatelessWidget {
               Text(
                 AppStrings.email,
                 textAlign: TextAlign.left,
-                style: AppTextstyles.style20w500,
+                style: AppTextstyles.style20Blackw500,
               ),
               const SizedBox(
                 height: 10,
@@ -51,7 +51,7 @@ class LoginScreen extends StatelessWidget {
               Text(
                 AppStrings.password,
                 textAlign: TextAlign.left,
-                style: AppTextstyles.style20w500,
+                style: AppTextstyles.style20Blackw500,
               ),
               const SizedBox(
                 height: 10,
@@ -75,7 +75,7 @@ class LoginScreen extends StatelessWidget {
                     },
                     child: Text(
                       AppStrings.forgotpassword,
-                      style: AppTextstyles.style15orgL,
+                      style: AppTextstyles.style15OrangeW600,
                     ),
                   ),
                 ),
@@ -89,7 +89,7 @@ class LoginScreen extends StatelessWidget {
                   height: 45,
                   onPressed: () {},
                   text: AppStrings.login,
-                  textStyle: AppTextstyles.style17weightcolor,
+                  textStyle: AppTextstyles.style17whiteW500,
                   backgroundColor: AppColors.orangecolor,
                 ),
               ),
@@ -99,7 +99,7 @@ class LoginScreen extends StatelessWidget {
               Center(
                 child: Text(
                   AppStrings.orsignupwith,
-                  style: AppTextstyles.stylesuptitle,
+                  style: AppTextstyles.style14BlackW300,
                 ),
               ),
               SizedBox(
@@ -124,13 +124,13 @@ class LoginScreen extends StatelessWidget {
                   children: [
                     Text(
                       AppStrings.donthaveaccount,
-                      style: AppTextstyles.stylesuptitle,
+                      style: AppTextstyles.style14BlackW300,
                     ),
                     TextButton(
                       onPressed: () {},
                       child: Text(
                         AppStrings.signup,
-                        style: AppTextstyles.style15orgL,
+                        style: AppTextstyles.style15OrangeW600,
                       ),
                     ),
                   ],

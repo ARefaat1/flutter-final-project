@@ -49,4 +49,11 @@ class AppStrings {
   static const String bestSellerSubtitle = "Discover the dishes recommended by the chef.";
 
   static const String addToCart = "Add to Cart";
+
+  static const String myOrders = "My Orders";
+  static const String active = "Active";
+  static const String completed = "Completed";
+  static const String cancelled = "Cancelled";
+  static const String cancelOrder= "Cancel Order";
+  static const String trackDriver = "Track Driver";
 }

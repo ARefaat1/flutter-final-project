@@ -12,7 +12,7 @@ class CustomLabel extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 5),
       child: Text(
         text,
-        style: AppTextstyles.style20w500,
+        style: AppTextstyles.style20Blackw500,
       ),
     );
   }

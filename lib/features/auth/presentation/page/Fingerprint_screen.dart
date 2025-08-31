@@ -28,7 +28,7 @@ class FingerprintScreen extends StatelessWidget {
                 children: [
                   Text(
                     AppStrings.subtitleLogin,
-                    style: AppTextstyles.style14blackfont,
+                    style: AppTextstyles.style14Blackw500,
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 50),
@@ -40,7 +40,7 @@ class FingerprintScreen extends StatelessWidget {
                   const SizedBox(height: 30),
                   Text(
                     "ضع إصبعك لتأكيد الدخول",
-                    style: AppTextstyles.style20w500,
+                    style: AppTextstyles.style20Blackw500,
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 50),
