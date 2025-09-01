@@ -56,4 +56,7 @@ class AppStrings {
   static const String cancelled = "Cancelled";
   static const String cancelOrder= "Cancel Order";
   static const String trackDriver = "Track Driver";
+  static const String selectedReasonToCancel = "Select a reason for cancellation";
+  static const String enterYourReason = "Enter your reason";
+  static const String submit = "Submit";
 }
