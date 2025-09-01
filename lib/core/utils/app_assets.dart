@@ -47,4 +47,7 @@ class AppAssets {
   static const String Item2 = "assets/images/item2.png";
   static const String Item3 = "assets/images/item3.png";
   static const String Item4 = "assets/images/item4.png";
+
+  //orders
+  static const String orderCancelled = "assets/icons/Cancel_Sequence.svg";
 }

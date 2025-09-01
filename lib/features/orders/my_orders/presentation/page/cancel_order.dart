@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_final_project/core/utils/app_colors.dart';
 import 'package:flutter_final_project/core/utils/app_strings.dart';
 import 'package:flutter_final_project/core/utils/app_textstyles.dart';
+import 'package:flutter_final_project/core/widget/BottomNav.dart';
 import 'package:flutter_final_project/core/widget/custom_bottom_container.dart';
 import 'package:flutter_final_project/core/widget/custom_elevated_button.dart';
 import 'package:flutter_final_project/core/widget/menu_app_bar.dart';
@@ -50,6 +51,12 @@ class _CancelOrderState extends State<CancelOrder> {
         ),
       ),
     ),
+      bottomNavigationBar: CustomBottomNavBar(
+        currentIndex: 2,
+        onTap: (index) {
+          // Handle bottom navigation tap
+        },
+      ),
     );
   }
 }

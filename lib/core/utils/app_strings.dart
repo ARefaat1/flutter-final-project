@@ -59,4 +59,7 @@ class AppStrings {
   static const String selectedReasonToCancel = "Select a reason for cancellation";
   static const String enterYourReason = "Enter your reason";
   static const String submit = "Submit";
+  static const String orderCancelled = "¡Order Cancelled!";
+  static const String orderCancelledMessage = "Your order has been successfully cancelled.";
+  static const String cancelQuestions = "If you have any question reach directly to our customer support";
 }
