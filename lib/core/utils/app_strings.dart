@@ -49,4 +49,10 @@ class AppStrings {
   static const String bestSellerSubtitle = "Discover the dishes recommended by the chef.";
 
   static const String addToCart = "Add to Cart";
+
+
+    // profile
+  static const String myProfile = "My Profile";
+  static const String updateProfile = "Update Profile";
+
 }

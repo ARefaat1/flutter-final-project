@@ -8,18 +8,19 @@ import 'package:flutter_final_project/features/auth/presentation/page/login_scre
 import 'package:flutter_final_project/features/auth/presentation/page/signup_screen.dart';
 import 'package:flutter_final_project/features/onboardind/presentation/page/onboarding.dart';
 import 'package:flutter_final_project/features/splach_screen/presentation/page/splach_screen.dart';
-import 'package:flutter_final_project/screens/sidebar_menu.dart';
-import 'package:flutter_final_project/screens/profile_screen.dart';
 import 'package:go_router/go_router.dart';
-import 'package:flutter_final_project/screens/payment_methods_screen.dart';
-import 'package:flutter_final_project/screens/add_card_screen.dart';
-import 'package:flutter_final_project/screens/settings_screen.dart';
-import 'package:flutter_final_project/screens/notification_settings_screen.dart';
-import 'package:flutter_final_project/screens/password_settings_screen.dart';
-import 'package:flutter_final_project/screens/delete_account_screen.dart';
+import 'package:flutter_final_project/features/profile/presentation/page/profile_menu_screen.dart';
+import 'package:flutter_final_project/features/profile/presentation/page/my_profile_screen.dart';
+import 'package:flutter_final_project/features/profile/presentation/page/settings_screen.dart';
+import 'package:flutter_final_project/features/profile/presentation/page/notification_settings_screen.dart';
+import 'package:flutter_final_project/features/profile/presentation/page/password_settings_screen.dart';
+import 'package:flutter_final_project/features/profile/presentation/page/delete_account_screen.dart';
+
+import 'package:flutter_final_project/features/profile/presentation/page/payment_methods_screen.dart';
+import 'package:flutter_final_project/features/profile/presentation/page/add_card_screen.dart';
 
 final GoRouter router = GoRouter(
-  initialLocation: AppRoutes.sidebar,
+  initialLocation: AppRoutes.splash,
   routes: [
     GoRoute(
       path: AppRoutes.splash,
@@ -54,62 +55,47 @@ final GoRouter router = GoRouter(
       builder: (context, state) => FingerprintScreen(),
     ),
     GoRoute(
-      path: AppRoutes.sidebar,
-      builder: (context, state) => const SidebarMenu(),
+  path: AppRoutes.profileMenu, // '/profile'
+  builder: (context, state) => const ProfileMenuScreen(),
+  routes: [
+    GoRoute(
+      path: 'my-profile',
+      builder: (context, state) => const MyProfileScreen(),
     ),
     GoRoute(
-      path: '/profile',
-      builder: (context, state) => ProfileScreen(),
-    ),
-    GoRoute(
-      path: '/address',
-      builder: (context, state) => const PlaceholderScreen(title: 'Delivery Address'),
-    ),
-    GoRoute(
-      path: '/payment-methods',
+      path: 'payments',
       builder: (context, state) => const PaymentMethodsScreen(),
+      routes: [
+        GoRoute(
+          path: 'add-card',
+          builder: (context, state) => const AddCardScreen(),
+        ),
+      ],
     ),
     GoRoute(
-      path: '/add-card',
-      builder: (context, state) => const AddCardScreen(),
-    ),
-
-    GoRoute(
-      path: '/orders',
-      builder: (context, state) => const PlaceholderScreen(title: 'My Orders'),
-    ),
-    GoRoute(
-      path: '/contact',
-      builder: (context, state) => const PlaceholderScreen(title: 'Contact Us'),
-    ),
-    GoRoute(
-      path: '/help',
-      builder: (context, state) => const PlaceholderScreen(title: 'Help & FAQs'),
-    ),
-    GoRoute(
-  path: '/settings',
-  builder: (context, state) => const SettingsScreen(),
-),
-
-GoRoute(
-  path: '/notification-settings',
-  builder: (context, state) => const NotificationSettingsScreen(),
-),
-
-GoRoute(
-  path: '/password-settings',
-  builder: (context, state) => const PasswordSettingsScreen(),
-),
-
-GoRoute(
-  path: '/delete-account',
-  builder: (context, state) => const DeleteAccountScreen(),
-),
-    GoRoute(
-      path: '/logout',
-      builder: (context, state) => const PlaceholderScreen(title: 'Log Out'),
+      path: 'settings',
+      builder: (context, state) => const SettingsScreen(),
+      routes: [
+        GoRoute(
+          path: 'notification-settings',
+          builder: (context, state) => const NotificationSettingsScreen(),
+        ),
+        GoRoute(
+          path: 'password-settings',
+          builder: (context, state) => const PasswordSettingsScreen(),
+        ),
+        GoRoute(
+          path: 'delete-account',
+          builder: (context, state) => const DeleteAccountScreen(),
+        ),
+      ],
     ),
   ],
+)
+
+  ],
+  
+  
   errorBuilder: (context, state) {
     return Scaffold(
       appBar: AppBar(title: const Text('Error')),
@@ -117,17 +103,3 @@ GoRoute(
     );
   },
 );
-
-/// Simple placeholder screen for missing routes
-class PlaceholderScreen extends StatelessWidget {
-  final String title;
-  const PlaceholderScreen({super.key, required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: Center(child: Text('$title screen')),
-    );
-  }
-}
