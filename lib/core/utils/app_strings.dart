@@ -62,4 +62,9 @@ class AppStrings {
   static const String orderCancelled = "¡Order Cancelled!";
   static const String orderCancelledMessage = "Your order has been successfully cancelled.";
   static const String cancelQuestions = "If you have any question reach directly to our customer support";
+  static const String leaveAReview = "Leave a Review";
+  static const String preReviewText = "We'd love to know what you think of your dish.";
+
+  static const String deliveryAddress = "Delivery Address";
+  static const String addNewAddress = "Add New Address";
 }
