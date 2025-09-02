@@ -119,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Text(
                           "Best Seller",
-                          style: AppTextstyles.style20Blackw500,
+                          style: AppTextstyles.style20BlackW500,
                         ),
                         const Spacer(),
                         Text(

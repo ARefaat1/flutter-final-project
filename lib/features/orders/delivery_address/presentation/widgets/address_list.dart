@@ -52,7 +52,7 @@ class _AddressListState extends State<AddressList> {
                 title: Row(
                   children: [
                     SvgPicture.asset(
-                      AppAssets.homeOrange,
+                      AppAssets.homeOrange,  //TODO this icon doesn't show
                     ),
                     const SizedBox(width: 10),
                     Expanded(
@@ -61,7 +61,7 @@ class _AddressListState extends State<AddressList> {
                         children: [
                           Text(
                             addresses[index]["title"]!,
-                            style: AppTextstyles.style20Blackw500,
+                            style: AppTextstyles.style20BlackW500,
                           ),
                           const SizedBox(height: 2),
                           Text(

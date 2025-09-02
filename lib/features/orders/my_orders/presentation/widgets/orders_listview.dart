@@ -42,9 +42,9 @@ class OrdersListView extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(order.title,
-                              style: AppTextstyles.style20Blackw500),
+                              style: AppTextstyles.style20BlackW500),
                           Text(order.price,
-                              style: AppTextstyles.style20Blackw500),
+                              style: AppTextstyles.style20BlackW500),
                         ],
                       ),
                       const SizedBox(height: 2),

@@ -21,7 +21,7 @@ class AdAppBar extends StatelessWidget implements PreferredSizeWidget {
         onPressed: () => Navigator.of(context).pop(),
         icon: SvgPicture.asset('assets/icons/back.svg'),
       ),
-      title: Text(title, style: AppTextstyles.style20Blackw500),
+      title: Text(title, style: AppTextstyles.style20BlackW500),
       toolbarHeight: 80,
     );
   }

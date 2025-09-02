@@ -67,4 +67,6 @@ class AppStrings {
 
   static const String deliveryAddress = "Delivery Address";
   static const String addNewAddress = "Add New Address";
+  static const String name = "Name";
+  static const String address = "Address";
 }
