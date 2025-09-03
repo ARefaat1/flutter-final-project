@@ -43,7 +43,7 @@ class _OrderReviewState extends State<OrderReview> {
                   children: [
 
                     Center(child: Image(image: NetworkImage(allOrders[0].image))),
-                    Text(allOrders[0].title, style: AppTextstyles.style20Blackw500),
+                    Text(allOrders[0].title, style: AppTextstyles.style20BlackW500),
                     Text(AppStrings.preReviewText),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,

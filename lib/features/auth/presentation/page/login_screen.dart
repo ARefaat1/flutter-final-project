@@ -37,7 +37,7 @@ class LoginScreen extends StatelessWidget {
               Text(
                 AppStrings.email,
                 textAlign: TextAlign.left,
-                style: AppTextstyles.style20Blackw500,
+                style: AppTextstyles.style20BlackW500,
               ),
               const SizedBox(
                 height: 10,
@@ -51,7 +51,7 @@ class LoginScreen extends StatelessWidget {
               Text(
                 AppStrings.password,
                 textAlign: TextAlign.left,
-                style: AppTextstyles.style20Blackw500,
+                style: AppTextstyles.style20BlackW500,
               ),
               const SizedBox(
                 height: 10,
