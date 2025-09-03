@@ -10,6 +10,12 @@ import 'package:flutter_final_project/features/Home/data/model/Categorylist_mode
 import 'package:flutter_final_project/features/Home/presentation/widget/action_icon.dart';
 import 'package:flutter_final_project/features/Home/presentation/widget/text_column.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
+import 'package:flutter_final_project/core/router/app_routes.dart';
+import 'package:flutter_final_project/features/profile/presentation/page/profile_menu_screen.dart';
+
+
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -24,8 +30,35 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
+      appBar: AppBar(
+      title: const Text("Home"),
+      centerTitle: true,
+      actions: [
+        GestureDetector(
+          /*onTap: () {
+            context.go('AppRoutes.profileMenu');
+          },*/
+          onTap: () {
+  // quick test: open ProfileMenuScreen directly without GoRouter
+          Navigator.push(
+          context,
+    MaterialPageRoute(builder: (_) => const ProfileMenuScreen()),
+          );
+           },
+
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: SvgPicture.asset(
+              AppAssets.person,
+              height: 28,
+              width: 28,
+            ),
+          ),
+        ),
+      ],
+      ),
+        body: Stack(
+         children: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 70),
             child: Column(
@@ -55,9 +88,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: SvgPicture.asset(AppAssets.notification,
                             fit: BoxFit.scaleDown)),
                     const SizedBox(width: 10),
-                    ActionIcon(
-                        child: SvgPicture.asset(AppAssets.person,
-                            fit: BoxFit.scaleDown)),
+                    
+
                   ],
                 ),
                 const SizedBox(height: 20),

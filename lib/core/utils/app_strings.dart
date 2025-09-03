@@ -69,4 +69,10 @@ class AppStrings {
   static const String addNewAddress = "Add New Address";
   static const String name = "Name";
   static const String address = "Address";
+
+
+    // profile
+  static const String myProfile = "My Profile";
+  static const String updateProfile = "Update Profile";
+
 }
