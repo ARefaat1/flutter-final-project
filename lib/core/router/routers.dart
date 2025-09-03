@@ -15,9 +15,11 @@ import 'package:flutter_final_project/features/profile/presentation/page/setting
 import 'package:flutter_final_project/features/profile/presentation/page/notification_settings_screen.dart';
 import 'package:flutter_final_project/features/profile/presentation/page/password_settings_screen.dart';
 import 'package:flutter_final_project/features/profile/presentation/page/delete_account_screen.dart';
-
 import 'package:flutter_final_project/features/profile/presentation/page/payment_methods_screen.dart';
 import 'package:flutter_final_project/features/profile/presentation/page/add_card_screen.dart';
+import 'package:flutter_final_project/features/profile/presentation/page/contact_us_screen.dart';
+import 'package:flutter_final_project/features/profile/presentation/page/help_faqs_screen.dart';
+
 
 final GoRouter router = GoRouter(
   initialLocation: AppRoutes.splash,
@@ -89,6 +91,15 @@ final GoRouter router = GoRouter(
           builder: (context, state) => const DeleteAccountScreen(),
         ),
       ],
+      
+    ),
+    GoRoute(
+      path: 'contact-us',
+      builder: (context, state) => const ContactUsScreen(),
+    ),
+    GoRoute(
+      path: 'help-faqs',
+      builder: (context, state) => const HelpFaqsScreen(),
     ),
   ],
 )

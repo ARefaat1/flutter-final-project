@@ -13,8 +13,8 @@ class AppRoutes {
   static const String addresses     = 'addresses';
   static const String payments = '/profile/payments';
   static const String addCard = '/profile/payments/add-card';
-  static const String contactUs     = 'contact-us';
-  static const String helpFaqs      = 'help-faqs';
+  static const String contactUs = '/profile/contact-us';
+  static const String helpFaqs  = '/profile/help-faqs';
   static const String settings = '/profile/settings';
   static const String notificationSettings = '/profile/settings/notification-settings';
   static const String passwordSettings = '/profile/settings/password-settings';
