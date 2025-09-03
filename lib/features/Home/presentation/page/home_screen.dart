@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_final_project/core/utils/app_assets.dart';
 import 'package:flutter_final_project/core/utils/app_colors.dart';
 import 'package:flutter_final_project/core/utils/app_textstyles.dart';
+import 'package:flutter_final_project/core/widget/BottomNav.dart';
 import 'package:flutter_final_project/core/widget/custom_bottom_container.dart';
 import 'package:flutter_final_project/core/widget/custom_textformfiled.dart';
 import 'package:flutter_final_project/features/Home/data/model/Best_Seller_model.dart';
@@ -223,6 +224,14 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           )
         ],
+      ),
+      bottomNavigationBar: CustomBottomNavBar(
+        currentIndex: _currentIndex,
+        onTap: (index) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
       ),
     );
   }
