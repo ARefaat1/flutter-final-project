@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_final_project/core/utils/app_assets.dart';
 import 'package:flutter_final_project/core/utils/app_colors.dart';
 import 'package:flutter_final_project/core/utils/app_strings.dart';
 import 'package:flutter_final_project/core/utils/app_textstyles.dart';
@@ -23,7 +24,7 @@ class _AdvertisingBannerState extends State<AdvertisingBanner> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.YellowBase,
-      appBar: AdAppBar(title: "Pizza with Pepperoni and Cheese"),
+      appBar: AdAppBar(title: AppStrings.PizzaWithPepperoniAndCheese),
 
       body: CustomBottomContainer(
         child: SingleChildScrollView(
@@ -69,10 +70,10 @@ class _AdvertisingBannerState extends State<AdvertisingBanner> {
                           alignment: Alignment.center,
                           children: [
                             SvgPicture.asset(
-                              "assets/icons/Star 1.svg",
+                              AppAssets.star1,
                             ),
                             Text(
-                              "-30%",
+                              AppStrings.discount,
                               style: AppTextstyles.style20w700white,
                             ),
                           ],
@@ -89,7 +90,7 @@ class _AdvertisingBannerState extends State<AdvertisingBanner> {
                     children: [
                       const Text(
                         "\$14.00 ",
-                        style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold, fontSize: 20),
+                        style: TextStyle(color: AppColors.orangecolor, fontWeight: FontWeight.bold, fontSize: 20),
                       ),
                       const Text(
                         "\$20.00",
@@ -123,7 +124,7 @@ class _AdvertisingBannerState extends State<AdvertisingBanner> {
                 // TODO all of this will be deleted to get the data for the db
                 // Description Placeholder
                 const Text(
-                  "Lorem ipsum dolor sit amet",
+                  AppStrings.suptitle1,
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 6),

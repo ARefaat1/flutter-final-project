@@ -45,7 +45,6 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
       backgroundColor: AppColors.YellowBase,
       appBar: MenuAppBar(title: AppStrings.favoritesTitle),
       body: CustomBottomContainer(
-        // Remove the bottomNavigationBar from here since it's handled by MainWrapperScreen
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

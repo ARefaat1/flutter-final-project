@@ -7,6 +7,7 @@ import 'package:flutter_final_project/core/widget/BottomNav.dart';
 import 'package:flutter_final_project/core/widget/custom_bottom_container.dart';
 import 'package:flutter_final_project/core/widget/custom_elevated_button.dart';
 import 'package:flutter_final_project/core/widget/menu_app_bar.dart';
+import 'package:flutter_final_project/features/orders/my_orders/presentation/page/order_cancelled.dart';
 import 'package:flutter_final_project/features/orders/my_orders/presentation/widgets/cancel_reasons.dart';
 
 class CancelOrder extends StatefulWidget {
@@ -42,7 +43,9 @@ class _CancelOrderState extends State<CancelOrder> {
                   text: AppStrings.submit,
                   width: 142,
                   onPressed: () {
-                    // Handle cancel order action
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) =>  OrderCancelled(),
+                    ));
                   },
                 ),
               ),

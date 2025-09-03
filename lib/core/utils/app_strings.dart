@@ -70,7 +70,8 @@ class AppStrings {
   static const String name = "Name";
   static const String address = "Address";
 
-
+  static const String PizzaWithPepperoniAndCheese = "Pizza with Pepperoni and Cheese";
+  static const String discount = "-30%";
     // profile
   static const String myProfile = "My Profile";
   static const String updateProfile = "Update Profile";

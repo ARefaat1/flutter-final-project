@@ -52,5 +52,8 @@ class AppAssets {
   static const String orderCancelled = "assets/icons/Cancel_Sequence.svg";
   static const String ratingStar = "assets/icons/bot-star.svg";
   static const String homeOrange = "assets/icons/home_orange.svg";  //TODO fix this asset
+
   
+  static const String star1 = "assets/icons/Star 1.svg";
+  static const String bag = "assets/icons/bag.svg";
 }

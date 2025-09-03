@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_final_project/core/utils/app_assets.dart';
 import 'package:flutter_final_project/core/utils/app_colors.dart';
 import 'package:flutter_final_project/core/utils/app_textstyles.dart';
 import 'package:flutter_svg/svg.dart';
@@ -43,7 +44,7 @@ class AddToCart extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SvgPicture.asset(
-              'assets/icons/bag.svg',
+              AppAssets.bag,
             ),
             const SizedBox(width: 8),
             Text(

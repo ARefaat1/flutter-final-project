@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_final_project/core/utils/app_colors.dart';
 import 'package:flutter_final_project/core/utils/app_textstyles.dart';
 import 'package:flutter_final_project/features/favorites/models/meal.dart';
 
@@ -19,6 +18,7 @@ class MenusFoodGridView extends StatelessWidget {
           mainAxisSpacing: 10.0,
           crossAxisSpacing: 10.0,
           childAspectRatio: 0.75,
+        
         ),
         itemBuilder: (context, index) {
           final meal = items[index]; // ✅ get current meal
@@ -26,7 +26,7 @@ class MenusFoodGridView extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0),
             ),
-            elevation: 4.0,
+            elevation: 0.0,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [

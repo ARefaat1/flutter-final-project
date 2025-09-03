@@ -7,6 +7,8 @@ import 'package:flutter_final_project/core/widget/custom_elevated_button.dart';
 
 import 'package:flutter_final_project/core/widget/custom_textformfiled.dart';
 import 'package:flutter_final_project/core/widget/custum_appbar.dart';
+import 'package:flutter_final_project/features/Home/presentation/page/home_screen.dart';
+import 'package:flutter_final_project/features/auth/presentation/page/signup_screen.dart';
 import 'package:flutter_final_project/features/auth/presentation/widget/welcome_column.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
@@ -87,7 +89,11 @@ class LoginScreen extends StatelessWidget {
                 child: CustomElevatedButton(
                   width: 207,
                   height: 45,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => HomeScreen(),
+                    ));
+                  },
                   text: AppStrings.login,
                   textStyle: AppTextstyles.style17whiteW500,
                   backgroundColor: AppColors.orangecolor,
@@ -127,7 +133,11 @@ class LoginScreen extends StatelessWidget {
                       style: AppTextstyles.style14BlackW300,
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(
+                          builder: (context) => SignupScreen(),
+                        ));
+                      },
                       child: Text(
                         AppStrings.signup,
                         style: AppTextstyles.style15OrangeW600,

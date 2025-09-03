@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_final_project/core/utils/app_strings.dart';
 import 'package:flutter_final_project/core/utils/app_textstyles.dart';
+import 'package:flutter_final_project/features/auth/presentation/page/login_screen.dart';
 
 class SignupFooter extends StatelessWidget {
   const SignupFooter({super.key});
@@ -18,7 +19,11 @@ class SignupFooter extends StatelessWidget {
               minimumSize: Size(0, 0),
               tapTargetSize: MaterialTapTargetSize.shrinkWrap,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) => LoginScreen(),
+              ));
+            },
             child: Text(AppStrings.login, style: AppTextstyles.style15OrangeW600),
           ),
         ],
