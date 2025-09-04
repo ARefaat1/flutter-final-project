@@ -12,6 +12,7 @@ class AppStrings {
 
   // auth
 
+  static const String home = "Home";
   static const String login = " Log In";
   static const String welcome = "Welcome";
   static const subtitleLogin =

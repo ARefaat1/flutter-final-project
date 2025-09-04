@@ -7,12 +7,14 @@ class ActionIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: child,
-      width: 26,
-      height: 26,
-      decoration: BoxDecoration(
-          color: AppColors.white, borderRadius: BorderRadius.circular(10)),
+    return GestureDetector(
+      child: Container(
+        child: child,
+        width: 26,
+        height: 26,
+        decoration: BoxDecoration(
+            color: AppColors.white, borderRadius: BorderRadius.circular(10)),
+      ),
     );
   }
 }

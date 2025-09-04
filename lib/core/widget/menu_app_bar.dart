@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_final_project/core/utils/app_colors.dart';
+import 'package:flutter_final_project/core/utils/app_size.dart';
 import 'package:flutter_final_project/core/utils/app_textstyles.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -27,5 +28,5 @@ class MenuAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(80); // ✅ required
-}
+  Size get preferredSize => const Size.fromHeight(AppSize.appMenuSize);
+  } // ✅ required
